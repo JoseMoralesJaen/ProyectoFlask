@@ -1,0 +1,137 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+
+    /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: #464646;
+}
+
+
+#home
+{
+    margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	padding: 0 20px !important;
+    color: white;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+}
+
+#home h1
+{
+    font-family: 'Lalezar', cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+#home h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: 3px;
+    color: white ;
+}
+
+#home p {
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.btn-outline-t {
+  background-color: transparent;
+  border-color: #ccc;
+  color: white;
+}
+
+.btn-outline-t:hover {
+    background-color: #343a40;
+    border-color: #343a40;
+    color:white;
+}
+
+#help {
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: 3px;
+    margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	padding: 0 20px !important;
+    color: white;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+
+}
+
+#coctel {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: white ;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-decoration-style: solid;
+    
+}
+
+#coctel img {
+    width: 500px;
+    height: 400px;
+    padding: 8px;
+    margin-bottom: 80px;
+    margin-left: -5px;
+    
+    
+
+    
+}
+
+#lista {
+    list-style: none;
+}
+
+.formulario {
+    width: auto;
+    color: #ccc;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+.form-control {
+    width: 300px;
+}
+
+.formulario h1 {
+    color: white;
+}
+
+#contenedorerror {
+    margin-left: 50px;
+    
+}
+
+#error {
+    color: white;
+}
+
+.alert-danger {
+    width: 500px;
+    font-size: 24px;
+    
+}
+

@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+
+
+<html lang="en">
+<head>
+    
+    <title>Help</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    {% block container%}
+    <div id="help">  
+    <h1>Help</h1>
+    <br>
+    
+        <h5 class="font-weight-bold">What is this web for ?</h5>
+        <ul>
+            <li>This web serves as an application for a CBR system. The purpose of this work is to recommend cocktails according to a set of ingredients.</li>
+        </ul>
+        <h5 class="font-weight-bold">Where can I find the cocktails ?</h5>
+        <ul>
+            <li>There is a catalog with more than 100 cocktail recipes in "cocktail" tab.</li>
+        </ul>
+        <h5 class="font-weight-bold">What happens if the cocktail that I want is not in the catalog?</h5>
+        <ul>
+            <li>This is not a problem, in "Specially for you" you can choose the ingredients that you want for your cocktail and we will provide you a recipe.</li>
+        </ul>
+        <h5 class="font-weight-bold">How many ingredients can I choose?</h5>
+        <ul>
+            <li>You can choose as many you want with a minimum of 2 ingredients.</li>
+        </ul>
+        <h5 class="font-weight-bold">After receiving a personalized recipe I noticed that I am allergic to some ingredients, what can I do?</h5>
+        <ul>
+            <li>
+                Just email us to cocktailmasters@barkeeper.com and we will provide you a new recipe according to your needs.
+            </li>
+        </ul>
+        <h5>Can I trust the recommended recipe ?</h5>
+        <ul>
+            <li>Most of the time we offer feasible recipes, however it may happen that the recipe does not follow what you are looking for.
+                For that reason we ask for your opinion. In that way you can help us to keep improving!</li>
+        </ul>
+    </div>
+    {%endblock%}
+</body>
+</html>

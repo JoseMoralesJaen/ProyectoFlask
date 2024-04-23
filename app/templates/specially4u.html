@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block container %}
+    <div class="text-center">
+        <h1>{{ _(Find your cocktail !) }} </h1>
+        <p> At BarKeeper we are committed to making cocktails for all kinds of tastes, however if you do not find any
+        that you like we will prepare it for you! <br> Select the ingredients of your cocktail below. As you can see
+        you can choose between fruit drinks, juices, alcoholic and non-alcoholic beverages and <br> other types of
+        ingredients such as cucumber, ginger and ice cream.</p>
+    </div>
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+        <div class="accordion" id="accordionExample">
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Fruits
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                    {{ form.fruits_cb }}
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Alcoholic Drinks
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                  {{ form.alco_cb }}
+              </div>
+            </div>
+          </div>
+            <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Non Alcoholic Drinks
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                    {{ form.nonalco_cb }}
+              </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                   Others
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                  {{ form.others_cb }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+           <p>{{ form.submit() }}</p>
+        </div>
+    </form>
+    <div class="text-center">
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+
+
